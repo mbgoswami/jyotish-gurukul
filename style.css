@@ -1,0 +1,257 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+
+}
+
+#header{
+
+    height:60px;
+
+    background:#1b3c59;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:20px;
+
+}
+
+#mainLayout{
+
+    display:flex;
+
+    height:calc(100vh - 60px);
+
+}
+
+#leftPanel{
+
+    width:300px;
+
+    background:white;
+
+    border-right:1px solid #dcdcdc;
+
+    padding:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+#rightPanel{
+
+    flex:1;
+
+    background:#fafafa;
+
+    padding:20px;
+
+}
+
+/*==============================*/
+/* RIGHT PANEL */
+/*==============================*/
+
+#fileSearch{
+
+    margin-bottom:20px;
+
+}
+
+#fileSearch input{
+
+    width:100%;
+
+    padding:10px;
+
+    border:1px solid #cccccc;
+
+    border-radius:6px;
+
+    font-size:14px;
+
+}
+
+#contentArea{
+
+    height:calc(100% - 55px);
+
+    background:white;
+
+    border:1px solid #dddddd;
+
+    border-radius:8px;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+}
+
+#welcomeBox{
+
+    text-align:center;
+
+    color:#666666;
+
+}
+
+#welcomeBox h2{
+
+    color:#1b3c59;
+
+}
+
+#welcomeBox h3{
+
+    color:#444444;
+
+}
+
+.categoryItem{
+
+    padding:10px;
+
+    margin-bottom:6px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.categoryItem:hover{
+
+    background:#1b3c59;
+
+    color:white;
+
+}
+
+/*==============================*/
+/* LEFT PANEL */
+/*==============================*/
+
+#categorySearch{
+
+    margin-bottom:15px;
+
+}
+
+#categorySearch input{
+
+    width:100%;
+
+    padding:10px;
+
+    border:1px solid #cccccc;
+
+    border-radius:6px;
+
+    font-size:14px;
+
+}
+
+#categoryTitle{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#1b3c59;
+
+    margin-bottom:10px;
+
+}
+
+#categoryList{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    border-top:1px solid #dddddd;
+
+    padding-top:10px;
+
+}
+
+.fileItem{
+
+    padding:12px 15px;
+
+    margin-bottom:10px;
+
+    background:#ffffff;
+
+    border:1px solid #dcdcdc;
+
+    border-left:5px solid #2c7be5;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.fileItem:hover{
+
+    background:#eef6ff;
+
+    transform:translateX(5px);
+
+}
+
+.contentHeader{
+
+    padding:15px;
+
+    background:#f7f7f7;
+
+    border:1px solid #dddddd;
+
+    border-radius:8px;
+
+    margin-bottom:20px;
+
+}
+
+.contentHeader h2{
+
+    margin:0;
+
+    color:#1b3c6b;
+
+}
+
+.contentHeader p{
+
+    margin:5px 0;
+
+    color:#555;
+
+}
+

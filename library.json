@@ -1,0 +1,504 @@
+[
+    {
+        "id": 1,
+        "category": "Bhava",
+        "subcategory": "Bhav Chart New HR.jpg",
+        "path": [
+            "Bhava",
+            "Charts"
+        ],
+        "title": "Bhav Chart New HR",
+        "filename": "Bhav Chart New HR.jpg",
+        "filepath": "PDF/Bhava/Charts/Bhav Chart New HR.jpg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 2,
+        "category": "Bhava",
+        "subcategory": "12 Houses बारह भाव.pdf",
+        "path": [
+            "Bhava",
+            "Main"
+        ],
+        "title": "12 Houses बारह भाव",
+        "filename": "12 Houses बारह भाव.pdf",
+        "filepath": "PDF/Bhava/Main/12 Houses बारह भाव.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [
+            "Test",
+            "Mahesh"
+        ],
+        "related": []
+    },
+    {
+        "id": 3,
+        "category": "Bhava",
+        "subcategory": "bhav kundli.pdf",
+        "path": [
+            "Bhava",
+            "Main"
+        ],
+        "title": "bhav kundli",
+        "filename": "bhav kundli.pdf",
+        "filepath": "PDF/Bhava/Main/bhav kundli.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 4,
+        "category": "Books",
+        "subcategory": "",
+        "path": [
+            "Books"
+        ],
+        "title": "300-important-combinationsbv-ramanpdf-pdf-free",
+        "filename": "300-important-combinationsbv-ramanpdf-pdf-free.pdf",
+        "filepath": "PDF/Books/300-important-combinationsbv-ramanpdf-pdf-free.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 5,
+        "category": "Books",
+        "subcategory": "",
+        "path": [
+            "Books"
+        ],
+        "title": "Aryabhatiya-with-English-commentary",
+        "filename": "Aryabhatiya-with-English-commentary.pdf",
+        "filepath": "PDF/Books/Aryabhatiya-with-English-commentary.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 6,
+        "category": "Dasha",
+        "subcategory": "Mahadasha.pdf",
+        "path": [
+            "Dasha",
+            "Main"
+        ],
+        "title": "Mahadasha",
+        "filename": "Mahadasha.pdf",
+        "filepath": "PDF/Dasha/Main/Mahadasha.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 7,
+        "category": "Dasha",
+        "subcategory": "ज्योतीष दशा फल.pdf",
+        "path": [
+            "Dasha",
+            "Main"
+        ],
+        "title": "ज्योतीष दशा फल",
+        "filename": "ज्योतीष दशा फल.pdf",
+        "filepath": "PDF/Dasha/Main/ज्योतीष दशा फल.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 8,
+        "category": "Graha",
+        "subcategory": "Moon",
+        "path": [
+            "Graha",
+            "Main",
+            "Moon"
+        ],
+        "title": "Chandradev चन्द्र देव - Mvf ",
+        "filename": "Chandradev चन्द्र देव - Mvf .pdf",
+        "filepath": "PDF/Graha/Main/Moon/Chandradev चन्द्र देव - Mvf .pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 9,
+        "category": "Graha",
+        "subcategory": "Moon",
+        "path": [
+            "Graha",
+            "Main",
+            "Moon"
+        ],
+        "title": "Moon - चंद्र",
+        "filename": "Moon - चंद्र.pdf",
+        "filepath": "PDF/Graha/Main/Moon/Moon - चंद्र.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 10,
+        "category": "Graha",
+        "subcategory": "Surya",
+        "path": [
+            "Graha",
+            "Main",
+            "Surya"
+        ],
+        "title": "Introduction",
+        "filename": "Introduction.pdf",
+        "filepath": "PDF/Graha/Main/Surya/Introduction.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 11,
+        "category": "Graha",
+        "subcategory": "Surya",
+        "path": [
+            "Graha",
+            "Main",
+            "Surya"
+        ],
+        "title": "Surya-Chikitsa",
+        "filename": "Surya-Chikitsa.pdf",
+        "filepath": "PDF/Graha/Main/Surya/Surya-Chikitsa.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 12,
+        "category": "Graha",
+        "subcategory": "Surya",
+        "path": [
+            "Graha",
+            "Main",
+            "Surya"
+        ],
+        "title": "Suryadev सूर्य देव - Mvf ",
+        "filename": "Suryadev सूर्य देव - Mvf .pdf",
+        "filepath": "PDF/Graha/Main/Surya/Suryadev सूर्य देव - Mvf .pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 13,
+        "category": "Nakshatra",
+        "subcategory": "Bharani.pdf",
+        "path": [
+            "Nakshatra",
+            "Main"
+        ],
+        "title": "Bharani",
+        "filename": "Bharani.pdf",
+        "filepath": "PDF/Nakshatra/Main/Bharani.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 14,
+        "category": "Nakshatra",
+        "subcategory": "Constellation Guide.pdf",
+        "path": [
+            "Nakshatra",
+            "Main"
+        ],
+        "title": "Constellation Guide",
+        "filename": "Constellation Guide.pdf",
+        "filepath": "PDF/Nakshatra/Main/Constellation Guide.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 15,
+        "category": "Nakshatra",
+        "subcategory": "test.pdf",
+        "path": [
+            "Nakshatra",
+            "Main"
+        ],
+        "title": "test",
+        "filename": "test.pdf",
+        "filepath": "PDF/Nakshatra/Main/test.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 16,
+        "category": "Nakshatra",
+        "subcategory": "नक्षत्र 1 अश्विनी.pdf",
+        "path": [
+            "Nakshatra",
+            "Main"
+        ],
+        "title": "नक्षत्र 1 अश्विनी",
+        "filename": "नक्षत्र 1 अश्विनी.pdf",
+        "filepath": "PDF/Nakshatra/Main/नक्षत्र 1 अश्विनी.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 17,
+        "category": "Nakshatra",
+        "subcategory": "नक्षत्र 3 कृतिका.pdf",
+        "path": [
+            "Nakshatra",
+            "Main"
+        ],
+        "title": "नक्षत्र 3 कृतिका",
+        "filename": "नक्षत्र 3 कृतिका.pdf",
+        "filepath": "PDF/Nakshatra/Main/नक्षत्र 3 कृतिका.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 18,
+        "category": "Nakshatra",
+        "subcategory": "",
+        "path": [
+            "Nakshatra"
+        ],
+        "title": "नक्षत्र 1 अश्विनी",
+        "filename": "नक्षत्र 1 अश्विनी.pdf",
+        "filepath": "PDF/Nakshatra/नक्षत्र 1 अश्विनी.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 19,
+        "category": "Nakshatra",
+        "subcategory": "",
+        "path": [
+            "Nakshatra"
+        ],
+        "title": "नक्षत्र 2 भरणी",
+        "filename": "नक्षत्र 2 भरणी.pdf",
+        "filepath": "PDF/Nakshatra/नक्षत्र 2 भरणी.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 20,
+        "category": "Nakshatra",
+        "subcategory": "",
+        "path": [
+            "Nakshatra"
+        ],
+        "title": "नक्षत्र 3 कृतिका",
+        "filename": "नक्षत्र 3 कृतिका.pdf",
+        "filepath": "PDF/Nakshatra/नक्षत्र 3 कृतिका.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 21,
+        "category": "Nakshatra",
+        "subcategory": "",
+        "path": [
+            "Nakshatra"
+        ],
+        "title": "नक्षत्र भरणी",
+        "filename": "नक्षत्र भरणी.jpg",
+        "filepath": "PDF/Nakshatra/नक्षत्र भरणी.jpg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 22,
+        "category": "Nakshatra",
+        "subcategory": "",
+        "path": [
+            "Nakshatra"
+        ],
+        "title": "फल नक्षत्र के",
+        "filename": "फल नक्षत्र के.jpg",
+        "filepath": "PDF/Nakshatra/फल नक्षत्र के.jpg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 23,
+        "category": "Personal Notes",
+        "subcategory": "",
+        "path": [
+            "Personal Notes"
+        ],
+        "title": "Note",
+        "filename": "Note.txt",
+        "filepath": "PDF/Personal Notes/Note.txt",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 24,
+        "category": "Rashi",
+        "subcategory": "Aries",
+        "path": [
+            "Rashi",
+            "Main",
+            "Aries"
+        ],
+        "title": "Aries - Mesha",
+        "filename": "Aries - Mesha.pdf",
+        "filepath": "PDF/Rashi/Main/Aries/Aries - Mesha.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 25,
+        "category": "Rashi",
+        "subcategory": "Aries",
+        "path": [
+            "Rashi",
+            "Main",
+            "Aries"
+        ],
+        "title": "Mesh-Lagna-Fal",
+        "filename": "Mesh-Lagna-Fal.pdf",
+        "filepath": "PDF/Rashi/Main/Aries/Mesh-Lagna-Fal.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 26,
+        "category": "Rashi",
+        "subcategory": "Tauras",
+        "path": [
+            "Rashi",
+            "Main",
+            "Tauras"
+        ],
+        "title": "Tauras - Vrushabh",
+        "filename": "Tauras - Vrushabh.pdf",
+        "filepath": "PDF/Rashi/Main/Tauras/Tauras - Vrushabh.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 27,
+        "category": "Rashi",
+        "subcategory": "Tauras",
+        "path": [
+            "Rashi",
+            "Main",
+            "Tauras"
+        ],
+        "title": "Vrish-Lagna-Fal",
+        "filename": "Vrish-Lagna-Fal.pdf",
+        "filepath": "PDF/Rashi/Main/Tauras/Vrish-Lagna-Fal.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 28,
+        "category": "Yogas",
+        "subcategory": "Gajakesari Yoga",
+        "path": [
+            "Yogas",
+            "Main",
+            "Gajakesari Yoga"
+        ],
+        "title": "दशा का प्रभाव",
+        "filename": "दशा का प्रभाव.pdf",
+        "filepath": "PDF/Yogas/Main/Gajakesari Yoga/दशा का प्रभाव.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 29,
+        "category": "Yogas",
+        "subcategory": "Kaal Sarp Yog",
+        "path": [
+            "Yogas",
+            "Main",
+            "Kaal Sarp Yog"
+        ],
+        "title": "Dasha Mahadashaon ka Fal - Hindi",
+        "filename": "Dasha Mahadashaon ka Fal - Hindi.pdf",
+        "filepath": "PDF/Yogas/Main/Kaal Sarp Yog/Dasha Mahadashaon ka Fal - Hindi.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 30,
+        "category": "Yogas",
+        "subcategory": "Three-Hundred-Important-Combinations.pdf",
+        "path": [
+            "Yogas",
+            "Main"
+        ],
+        "title": "Three-Hundred-Important-Combinations",
+        "filename": "Three-Hundred-Important-Combinations.pdf",
+        "filepath": "PDF/Yogas/Main/Three-Hundred-Important-Combinations.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 31,
+        "category": "Yogas",
+        "subcategory": "कुंडली में 300 ज्योतिष योग.pdf",
+        "path": [
+            "Yogas",
+            "Main"
+        ],
+        "title": "कुंडली में 300 ज्योतिष योग",
+        "filename": "कुंडली में 300 ज्योतिष योग.pdf",
+        "filepath": "PDF/Yogas/Main/कुंडली में 300 ज्योतिष योग.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    }
+]
