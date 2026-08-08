@@ -1,0 +1,60 @@
+{
+  "name": "jyotish-study-library",
+  "version": "1.0.0",
+  "description": "Jyotish Project",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "node builder.js",
+    "publish": "node builder.js && git add . && git commit -m \"Library Updated\" && git push",
+    "electron": "electron .",
+    "dist": "electron-builder --win portable"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbgoswami/jyotish-gurukul.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mbgoswami/jyotish-gurukul/issues"
+  },
+  "homepage": "https://github.com/mbgoswami/jyotish-gurukul#readme",
+  "devDependencies": {
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3"
+  },
+
+  "build": {
+
+    "appId": "com.vaa.jyotish",
+
+    "productName": "Jyotish Study Library",
+
+    "directories": {
+
+        "output": "dist"
+
+    },
+
+    "files": [
+
+        "**/*",
+
+        "!Launcher/**",
+
+        "!node_modules/.cache/**"
+
+    ],
+
+    "win": {
+
+        "target": "portable"
+
+    }
+
+}
+}

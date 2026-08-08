@@ -1,0 +1,17 @@
+{
+  "name": "launcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "launcher.js",
+  "scripts": {
+    "start": "node launcher.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "open": "^11.0.0"
+  }
+}

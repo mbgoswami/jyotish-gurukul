@@ -11,6 +11,8 @@ let newFiles = 0;
 let updatedFiles = 0;
 
 let selectedFolder = null;
+let visibleFolders = [];
+let keyboardIndex = -1;
 
 console.log(categoryList);
 
@@ -128,12 +130,13 @@ function drawTree(node, parentElement, currentPath = []) {
         
         
         allFolderItems.push({
-            item,
-            icon,
-            key,
-            childContainer,
-        folderPath
-    });
+    item,
+    icon,
+    key,
+    childContainer,
+    folderPath,
+    folder
+});
 
         childContainer.style.paddingLeft = "20px";
 
@@ -455,43 +458,147 @@ function showSubCategory(category, subcategory){
 
 function openFile(file){
 
-    window.open(file.filepath, "_blank");
+    document.getElementById("fileViewer").src = file.filepath;
+
+    document.getElementById("viewerArea").style.display = "block";
+
+    document.getElementById("contentArea").style.display = "none";
 
 }
 
 function filterTree() {
 
-    const text = categorySearchInput.value
-        .trim()
-        .toLowerCase();
+    visibleFolders = [];
+    keyboardIndex = -1;
+
+    const text = categorySearchInput.value.trim().toLowerCase();
+    
+    if (text === "") {
+
+        allFolderItems.forEach(f => {
+
+            f.item.style.display = "";
+
+            f.childContainer.style.display = "none";
+
+            f.item.innerHTML = "▶ " + f.icon + " " + f.key;
+
+        });
+
+        return;
+    }
 
     allFolderItems.forEach(f => {
 
-        // पहले सबको Show करो
-        f.item.style.display = "";
+        let found = false;
 
-        if (text === "") {
+        // Folder Name
+        if (f.key.toLowerCase().includes(text)) {
 
-            f.childContainer.style.display = "none";
-            f.item.innerHTML = "▶ " + f.icon + " " + f.key;
-            return;
+            found = true;
 
         }
 
-        const match = f.key.toLowerCase().includes(text);
+        // File Name Search
         
-        if (match) {
+        if (!found) {
+
+            found = folderContainsText(f.folder, text);
+
+        }
+
+        if (found) {
+
+            visibleFolders.push(f);
+
+            f.item.style.display = "";
 
             f.childContainer.style.display = "block";
+
             f.item.innerHTML = "▼ " + f.icon + " " + f.key;
 
         } else {
 
             f.item.style.display = "none";
 
+            f.childContainer.style.display = "none";
+
         }
 
     });
+
+}
+
+function folderContainsText(folder, text) {
+
+    // Folder की अपनी Files
+    if (folder.files.some(file =>
+        file.title.toLowerCase().includes(text) ||
+        file.filename.toLowerCase().includes(text)
+    )) {
+        return true;
+    }
+
+    // सभी Subfolders
+    for (const [name, sub] of Object.entries(folder.folders)) {
+
+        // Subfolder Name
+        if (name.toLowerCase().includes(text)) {
+            return true;
+        }
+
+        // Recursive Search
+        if (folderContainsText(sub, text)) {
+            return true;
+        }
+    }
+
+    return false;
+
+}
+
+function updateKeyboardSelection(){
+
+    visibleFolders.forEach(f=>{
+
+        f.item.style.background="";
+        f.item.style.color="";
+
+    });
+
+    const current = visibleFolders[keyboardIndex];
+
+    console.clear();
+
+console.log("keyboardIndex =", keyboardIndex);
+
+console.log("visibleFolders length =", visibleFolders.length);
+
+console.table(
+    visibleFolders.map((f, i) => ({
+        Index: i,
+        Key: f.key,
+        Path: f.folderPath.join(" > ")
+    }))
+);
+
+    if(!current) return;
+
+    selectedFolder = current.item;
+    showFolderFiles(current.folder, current.folderPath.join(" > "));
+
+    current.item.style.background="#2563eb";
+    current.item.style.color="#ffffff";
+
+    current.item.scrollIntoView({
+        block:"nearest"
+    });
+
+    console.log(
+    "Selected:",
+    current.key,
+    current.item.innerText
+);
 
 }
 
@@ -601,37 +708,127 @@ document.addEventListener("keydown", function(e){
 
 document.addEventListener("keydown", function(e){
 
-    if(e.key === "Escape"){
+    if(e.key !== "Escape") return;
 
-        fileSearchInput.value = "";
+        // ---------- File Viewer ----------
+    const viewer = document.getElementById("viewerArea");
 
-        currentFolder = null;
-        currentFolderName = "";
+    if(viewer.style.display === "block"){
 
-        searchFiles();
+        viewer.style.display = "none";
 
-        // Collapse Tree
+        document.getElementById("fileViewer").src = "";
 
-        allChildContainers.forEach(c => {
+        document.getElementById("contentArea").style.display = "block";
 
-            c.style.display = "none";
+        return;
 
-        });
+    }
 
-        allFolderItems.forEach(f => {
+    // ---------- Left Search ----------
+    categorySearchInput.value = "";
+    filterTree();
 
-            f.item.innerHTML = "▶ " + f.icon + " " + f.key;
+    // ---------- Right Search ----------
+    fileSearchInput.value = "";
+    currentFolder = null;
+    currentFolderName = "";
+    searchFiles();
 
-            f.item.style.background = "";
+    // ---------- Collapse Tree ----------
+    allChildContainers.forEach(c=>{
+        c.style.display="none";
+    });
 
-            f.item.style.color = "";
+    allFolderItems.forEach(f=>{
 
-        });
+        f.item.innerHTML="▶ "+f.icon+" "+f.key;
 
-        selectedFolder = null;
+        f.item.style.background="";
+        f.item.style.color="";
 
-        fileSearchInput.focus();
+    });
 
+    selectedFolder=null;
+
+    // Focus back to Left Search
+    categorySearchInput.focus();
+
+});
+
+document.addEventListener("keydown", function(e){
+
+    // केवल Left Search Box पर ही काम करे
+
+    // console.log(
+    // "ACTIVE ELEMENT =",
+    // document.activeElement
+    // );
+
+    if(document.activeElement !== categorySearchInput) return;
+
+    // Search Result नहीं है
+    if(visibleFolders.length === 0) return;
+
+    // -----------------------
+    // Arrow Down
+    // -----------------------
+    if(e.key === "ArrowDown"){
+
+        e.preventDefault();
+
+        keyboardIndex++;
+        // console.log("DOWN =>", keyboardIndex);
+
+        if(keyboardIndex >= visibleFolders.length){
+            keyboardIndex = 0;
+        }
+
+        updateKeyboardSelection();
+        return;
+    }
+
+    // -----------------------
+    // Arrow Up
+    // -----------------------
+    if(e.key === "ArrowUp"){
+
+        e.preventDefault();
+
+        keyboardIndex--;
+        // console.log("UP =>", keyboardIndex);
+
+        if(keyboardIndex < 0){
+            keyboardIndex = visibleFolders.length - 1;
+        }
+
+        updateKeyboardSelection();
+        return;
+    }
+
+    // -----------------------
+    // Enter
+    // -----------------------
+    if(e.key === "Enter"){
+
+        e.preventDefault();
+
+    const current = visibleFolders[keyboardIndex];
+
+    //     console.log({
+    //     index: keyboardIndex,
+    //     key: current.key,
+    //     display: current.item.style.display,
+    //     text: current.item.innerText
+    // });
+
+        if(!current) return;
+
+        // Mouse Click जैसा व्यवहार
+        
+        current.item.onclick();
+
+        return;
     }
 
 });
