@@ -475,18 +475,24 @@ function filterTree() {
     
     if (text === "") {
 
-        allFolderItems.forEach(f => {
+    allFolderItems.forEach(f => {
 
-            f.item.style.display = "";
+        f.item.style.display = "";
+        f.childContainer.style.display = "none";
+        f.item.innerHTML = "▶ " + f.icon + " " + f.key;
 
-            f.childContainer.style.display = "none";
+    });
 
-            f.item.innerHTML = "▶ " + f.icon + " " + f.key;
+    // Normal tree navigation के लिए
+    // केवल top-level folders से शुरुआत करें
+    visibleFolders = allFolderItems.filter(f =>
+        f.folderPath.length === 1
+    );
 
-        });
+    keyboardIndex = -1;
 
-        return;
-    }
+    return;
+}
 
     allFolderItems.forEach(f => {
 
@@ -759,73 +765,133 @@ document.addEventListener("keydown", function(e){
 document.addEventListener("keydown", function(e){
 
     // केवल Left Search Box पर ही काम करे
-
-    // console.log(
-    // "ACTIVE ELEMENT =",
-    // document.activeElement
-    // );
-
     if(document.activeElement !== categorySearchInput) return;
 
-    // Search Result नहीं है
+    // --------------------------------
+    // Normal Tree Navigation
+    // --------------------------------
+
+    const searchText =
+        categorySearchInput.value.trim();
+
+    // Search box खाली है
+    if(searchText === ""){
+
+        // केवल currently visible folder rows
+        // navigation list में रखें
+        const navigableFolders =
+            allFolderItems.filter(f =>
+                f.item.style.display !== "none"
+            );
+
+        if(navigableFolders.length === 0) return;
+
+        // Arrow Down
+        if(e.key === "ArrowDown"){
+
+            e.preventDefault();
+
+            keyboardIndex++;
+
+            if(keyboardIndex >= navigableFolders.length){
+                keyboardIndex = 0;
+            }
+
+            visibleFolders = navigableFolders;
+
+            updateKeyboardSelection();
+
+            return;
+        }
+
+        // Arrow Up
+        if(e.key === "ArrowUp"){
+
+            e.preventDefault();
+
+            keyboardIndex--;
+
+            if(keyboardIndex < 0){
+                keyboardIndex = navigableFolders.length - 1;
+            }
+
+            visibleFolders = navigableFolders;
+
+            updateKeyboardSelection();
+
+            return;
+        }
+
+        // Enter
+        if(e.key === "Enter"){
+
+            e.preventDefault();
+
+            const current =
+                navigableFolders[keyboardIndex];
+
+            if(!current) return;
+
+            current.item.onclick();
+
+            return;
+        }
+
+        return;
+    }
+
+
+    // --------------------------------
+    // Search Result Navigation
+    // --------------------------------
+
     if(visibleFolders.length === 0) return;
 
-    // -----------------------
+
     // Arrow Down
-    // -----------------------
     if(e.key === "ArrowDown"){
 
         e.preventDefault();
 
         keyboardIndex++;
-        // console.log("DOWN =>", keyboardIndex);
 
         if(keyboardIndex >= visibleFolders.length){
             keyboardIndex = 0;
         }
 
         updateKeyboardSelection();
+
         return;
     }
 
-    // -----------------------
+
     // Arrow Up
-    // -----------------------
     if(e.key === "ArrowUp"){
 
         e.preventDefault();
 
         keyboardIndex--;
-        // console.log("UP =>", keyboardIndex);
 
         if(keyboardIndex < 0){
             keyboardIndex = visibleFolders.length - 1;
         }
 
         updateKeyboardSelection();
+
         return;
     }
 
-    // -----------------------
+
     // Enter
-    // -----------------------
     if(e.key === "Enter"){
 
         e.preventDefault();
 
-    const current = visibleFolders[keyboardIndex];
-
-    //     console.log({
-    //     index: keyboardIndex,
-    //     key: current.key,
-    //     display: current.item.style.display,
-    //     text: current.item.innerText
-    // });
+        const current =
+            visibleFolders[keyboardIndex];
 
         if(!current) return;
 
-        // Mouse Click जैसा व्यवहार
-        
         current.item.onclick();
 
         return;
