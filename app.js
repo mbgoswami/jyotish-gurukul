@@ -791,62 +791,50 @@ function showSubCategory(category, subcategory){
 
 function openFile(file) {
 
-    const extension =
+    const ext =
         file.filename
             .split(".")
             .pop()
             .toLowerCase();
 
 
-    // --------------------------------------------------
-    // OFFICE FILES
-    // --------------------------------------------------
-
-    const officeTypes = [
-
-        ".doc",
-        ".docx",
-
-        ".xls",
-        ".xlsx",
-
-        ".ppt",
-        ".pptx"
-
-    ];
-
+    // ------------------------------------------
+    // OFFICE FILES → EXTERNAL OFFICE VIEWER
+    // ------------------------------------------
 
     if (
-        officeTypes.includes(
-            extension
-        )
+        ext === "doc" ||
+        ext === "docx" ||
+        ext === "xls" ||
+        ext === "xlsx" ||
+        ext === "ppt" ||
+        ext === "pptx"
     ) {
 
-        const publicUrl =
+        const fileUrl =
             new URL(
                 file.filepath,
                 window.location.href
             ).href;
 
 
-        window.open(
+        const officeUrl =
             "https://view.officeapps.live.com/op/view.aspx?src=" +
-            encodeURIComponent(
-                publicUrl
-            ),
+            encodeURIComponent(fileUrl);
+
+
+        window.open(
+            officeUrl,
             "_blank"
         );
 
-
         return;
-
     }
 
 
-    // --------------------------------------------------
-    // ALL OTHER FILES
-    // EXISTING INTERNAL VIEWER
-    // --------------------------------------------------
+    // ------------------------------------------
+    // ALL OTHER FILES → EXISTING INTERNAL VIEWER
+    // ------------------------------------------
 
     document.getElementById(
         "fileViewer"
@@ -861,7 +849,6 @@ function openFile(file) {
     document.getElementById(
         "contentArea"
     ).style.display = "none";
-
 }
 
 function filterTree() {
