@@ -5,7 +5,7 @@ const categoryList = document.getElementById("categoryList");
 // PASSWORD LOGIN SYSTEM
 // ======================================================
 
-const APP_PASSWORD = "1234";
+const APP_PASSWORD = "Mvph@2026";
 
 let isAuthenticated = false;
 
