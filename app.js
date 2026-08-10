@@ -1,5 +1,340 @@
 const categoryList = document.getElementById("categoryList");
 
+// ======================================================
+// MPDS JYOTISH STUDY LIBRARY
+// PASSWORD LOGIN SYSTEM
+// ======================================================
+
+const APP_PASSWORD = "1234";
+
+let isAuthenticated = false;
+
+
+// ------------------------------------------------------
+// START APPLICATION
+// ------------------------------------------------------
+
+async function startApplication() {
+
+    try {
+
+        await loadLibrary();
+
+        buildCategoryList();
+
+        categorySearchInput.focus();
+
+        console.log(
+            "📚 Jyotish Study Library started successfully."
+        );
+
+    } catch (error) {
+
+        console.error(
+            "❌ Application startup error:",
+            error
+        );
+
+        alert(
+            "Unable to load Jyotish Study Library."
+        );
+
+    }
+
+}
+
+
+// ------------------------------------------------------
+// SHOW LOGIN SCREEN
+// ------------------------------------------------------
+
+function showLoginScreen() {
+
+    // Prevent duplicate login screen
+    if (document.getElementById("loginScreen")) {
+        return;
+    }
+
+
+    // --------------------------------------------------
+    // Disable application behind login
+    // --------------------------------------------------
+
+    Array.from(document.body.children).forEach(
+        element => {
+
+            element.inert = true;
+
+        }
+    );
+
+
+    // --------------------------------------------------
+    // Create Login Screen
+    // --------------------------------------------------
+
+    const loginScreen =
+        document.createElement("div");
+
+    loginScreen.id = "loginScreen";
+
+
+    loginScreen.innerHTML = `
+
+        <div style="
+            width:380px;
+            max-width:90%;
+            background:#ffffff;
+            padding:35px;
+            border-radius:18px;
+            box-shadow:0 15px 50px rgba(0,0,0,0.25);
+            text-align:center;
+            box-sizing:border-box;
+        ">
+
+            <div style="
+                font-size:52px;
+                margin-bottom:10px;
+            ">
+                🔐
+            </div>
+
+            <h2 style="
+                margin:0 0 8px 0;
+                color:#1f2937;
+                font-size:25px;
+            ">
+                Jyotish Study Library
+            </h2>
+
+            <p style="
+                margin:0 0 25px 0;
+                color:#6b7280;
+                font-size:14px;
+            ">
+                🔒 Please enter password to continue
+            </p>
+
+            <input
+                id="loginPassword"
+                type="password"
+                placeholder="Enter Password"
+                autocomplete="off"
+                style="
+                    width:100%;
+                    box-sizing:border-box;
+                    padding:13px;
+                    border:1px solid #d1d5db;
+                    border-radius:9px;
+                    font-size:16px;
+                    outline:none;
+                    margin-bottom:14px;
+                "
+            >
+
+            <button
+                id="loginBtn"
+                type="button"
+                style="
+                    width:100%;
+                    padding:13px;
+                    border:none;
+                    border-radius:9px;
+                    background:#2563eb;
+                    color:white;
+                    font-size:16px;
+                    font-weight:bold;
+                    cursor:pointer;
+                "
+            >
+                🔓 Login
+            </button>
+
+            <div
+                id="loginMessage"
+                style="
+                    min-height:22px;
+                    margin-top:12px;
+                    color:#dc2626;
+                    font-size:13px;
+                "
+            ></div>
+
+        </div>
+
+    `;
+
+
+    // --------------------------------------------------
+    // Login Screen Style
+    // --------------------------------------------------
+
+    loginScreen.style.position = "fixed";
+    loginScreen.style.inset = "0";
+    loginScreen.style.zIndex = "999999";
+    loginScreen.style.display = "flex";
+    loginScreen.style.alignItems = "center";
+    loginScreen.style.justifyContent = "center";
+    loginScreen.style.background =
+        "linear-gradient(135deg,#eef2ff,#f8fafc)";
+    loginScreen.style.fontFamily =
+        "Arial, sans-serif";
+
+
+    document.body.appendChild(
+        loginScreen
+    );
+
+
+    const passwordInput =
+        document.getElementById(
+            "loginPassword"
+        );
+
+    const loginButton =
+        document.getElementById(
+            "loginBtn"
+        );
+
+    const loginMessage =
+        document.getElementById(
+            "loginMessage"
+        );
+
+
+    // --------------------------------------------------
+    // Focus Password
+    // --------------------------------------------------
+
+    passwordInput.focus();
+
+
+    // --------------------------------------------------
+    // LOGIN FUNCTION
+    // --------------------------------------------------
+
+    function login() {
+
+        const enteredPassword =
+            passwordInput.value;
+
+
+        if (
+            enteredPassword === APP_PASSWORD
+        ) {
+
+            // ------------------------------------------
+            // Correct password
+            // ------------------------------------------
+
+            isAuthenticated = true;
+
+
+            // Remove login screen
+            loginScreen.remove();
+
+
+            // Enable original application
+            Array.from(
+                document.body.children
+            ).forEach(element => {
+
+                element.inert = false;
+
+            });
+
+
+            // Start existing application
+            startApplication();
+
+
+            console.log(
+                "🔓 Login successful."
+            );
+
+
+        } else {
+
+            // ------------------------------------------
+            // Wrong password
+            // ------------------------------------------
+
+            loginMessage.textContent =
+                "❌ Incorrect password. Please try again.";
+
+            passwordInput.value = "";
+
+            passwordInput.focus();
+
+            passwordInput.select();
+
+        }
+
+    }
+
+
+    // --------------------------------------------------
+    // LOGIN BUTTON
+    // --------------------------------------------------
+
+    loginButton.addEventListener(
+        "click",
+        login
+    );
+
+
+    // --------------------------------------------------
+    // ENTER KEY
+    // --------------------------------------------------
+
+    passwordInput.addEventListener(
+        "keydown",
+        function(e) {
+
+            if (e.key === "Enter") {
+
+                e.preventDefault();
+
+                login();
+
+            }
+
+        }
+    );
+
+
+    // --------------------------------------------------
+    // TAB LOCK INSIDE LOGIN SCREEN
+    // --------------------------------------------------
+
+    loginScreen.addEventListener(
+        "keydown",
+        function(e) {
+
+            if (e.key !== "Tab") {
+                return;
+            }
+
+            e.preventDefault();
+
+            if (
+                document.activeElement ===
+                passwordInput
+            ) {
+
+                loginButton.focus();
+
+            } else {
+
+                passwordInput.focus();
+
+            }
+
+        }
+    );
+
+}
+
 let library = [];
 
 let allChildContainers = [];
@@ -24,13 +359,11 @@ async function loadLibrary(){
 
 }
 
-loadLibrary().then(() => {
+// ======================================================
+// APPLICATION START
+// ======================================================
 
-    buildCategoryList();
-
-    categorySearchInput.focus();
-
-});
+showLoginScreen();
 
 function buildTreeData() {
 
