@@ -1,0 +1,2 @@
+# jyotish-gurukul
+Jyotish Project
