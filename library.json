@@ -506,6 +506,21 @@
     },
     {
         "id": 33,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "रहस्यों की पुस्तक भाग 01",
+        "filename": "रहस्यों की पुस्तक भाग 01.pdf",
+        "filepath": "PDF/MISC/रहस्यों की पुस्तक भाग 01.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 34,
         "category": "Nakshatra",
         "subcategory": "Bharani.pdf",
         "path": [
@@ -521,7 +536,7 @@
         "related": []
     },
     {
-        "id": 34,
+        "id": 35,
         "category": "Nakshatra",
         "subcategory": "Constellation Guide.pdf",
         "path": [
@@ -537,7 +552,7 @@
         "related": []
     },
     {
-        "id": 35,
+        "id": 36,
         "category": "Nakshatra",
         "subcategory": "test.pdf",
         "path": [
@@ -553,7 +568,7 @@
         "related": []
     },
     {
-        "id": 36,
+        "id": 37,
         "category": "Nakshatra",
         "subcategory": "नक्षत्र 1 अश्विनी.pdf",
         "path": [
@@ -569,7 +584,7 @@
         "related": []
     },
     {
-        "id": 37,
+        "id": 38,
         "category": "Nakshatra",
         "subcategory": "नक्षत्र 3 कृतिका.pdf",
         "path": [
@@ -585,7 +600,7 @@
         "related": []
     },
     {
-        "id": 38,
+        "id": 39,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -600,7 +615,7 @@
         "related": []
     },
     {
-        "id": 39,
+        "id": 40,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -615,7 +630,7 @@
         "related": []
     },
     {
-        "id": 40,
+        "id": 41,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -630,7 +645,7 @@
         "related": []
     },
     {
-        "id": 41,
+        "id": 42,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -645,7 +660,7 @@
         "related": []
     },
     {
-        "id": 42,
+        "id": 43,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -660,7 +675,7 @@
         "related": []
     },
     {
-        "id": 43,
+        "id": 44,
         "category": "OTHERS",
         "subcategory": "heart attach related.txt",
         "path": [
@@ -676,7 +691,7 @@
         "related": []
     },
     {
-        "id": 44,
+        "id": 45,
         "category": "OTHERS",
         "subcategory": "LIST OF FOLK SINGERS.txt",
         "path": [
@@ -692,7 +707,7 @@
         "related": []
     },
     {
-        "id": 45,
+        "id": 46,
         "category": "OTHERS",
         "subcategory": "akshita.txt",
         "path": [
@@ -708,7 +723,7 @@
         "related": []
     },
     {
-        "id": 46,
+        "id": 47,
         "category": "OTHERS",
         "subcategory": "District at a Glance.docx",
         "path": [
@@ -724,7 +739,7 @@
         "related": []
     },
     {
-        "id": 47,
+        "id": 48,
         "category": "OTHERS",
         "subcategory": "GUJARATI MORE LATERS.doc",
         "path": [
@@ -740,7 +755,7 @@
         "related": []
     },
     {
-        "id": 48,
+        "id": 49,
         "category": "OTHERS",
         "subcategory": "कच्छ की संस्कृति और विरासत.docx",
         "path": [
@@ -756,7 +771,7 @@
         "related": []
     },
     {
-        "id": 49,
+        "id": 50,
         "category": "Personal Notes",
         "subcategory": "",
         "path": [
@@ -771,7 +786,7 @@
         "related": []
     },
     {
-        "id": 50,
+        "id": 51,
         "category": "Rashi",
         "subcategory": "Aries",
         "path": [
@@ -788,7 +803,7 @@
         "related": []
     },
     {
-        "id": 51,
+        "id": 52,
         "category": "Rashi",
         "subcategory": "Aries",
         "path": [
@@ -805,7 +820,7 @@
         "related": []
     },
     {
-        "id": 52,
+        "id": 53,
         "category": "Rashi",
         "subcategory": "Tauras",
         "path": [
@@ -822,7 +837,7 @@
         "related": []
     },
     {
-        "id": 53,
+        "id": 54,
         "category": "Rashi",
         "subcategory": "Tauras",
         "path": [
@@ -839,7 +854,7 @@
         "related": []
     },
     {
-        "id": 54,
+        "id": 55,
         "category": "Yogas",
         "subcategory": "Gajakesari Yoga",
         "path": [
@@ -856,7 +871,7 @@
         "related": []
     },
     {
-        "id": 55,
+        "id": 56,
         "category": "Yogas",
         "subcategory": "Kaal Sarp Yog",
         "path": [
@@ -873,7 +888,7 @@
         "related": []
     },
     {
-        "id": 56,
+        "id": 57,
         "category": "Yogas",
         "subcategory": "Three-Hundred-Important-Combinations.pdf",
         "path": [
@@ -889,7 +904,7 @@
         "related": []
     },
     {
-        "id": 57,
+        "id": 58,
         "category": "Yogas",
         "subcategory": "कुंडली में 300 ज्योतिष योग.pdf",
         "path": [
