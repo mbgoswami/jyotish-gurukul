@@ -860,6 +860,34 @@ function openFile(file) {
 
 
     // ------------------------------------------
+    // PDF FILES ON TOUCH DEVICES
+    // ------------------------------------------
+    // Android/iOS browsers often cannot render a PDF inside an iframe.
+    // They show a PDF placeholder with a second "Open" button instead.
+    // On phones/tablets, open the PDF directly in a new browser tab so
+    // one tap on the file card is enough.
+    // Desktop behaviour remains unchanged.
+
+    const isTouchDevice =
+        navigator.maxTouchPoints > 0 ||
+        window.matchMedia("(pointer: coarse)").matches;
+
+    if (ext === "pdf" && isTouchDevice) {
+
+        closeFileViewer();
+
+        const fileUrl =
+            new URL(
+                file.filepath,
+                window.location.href
+            ).href;
+
+        window.open(fileUrl, "_blank");
+
+        return;
+    }
+
+    // ------------------------------------------
     // ALL OTHER FILES → EXISTING INTERNAL VIEWER
     // ------------------------------------------
 
