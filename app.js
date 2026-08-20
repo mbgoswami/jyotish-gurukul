@@ -813,7 +813,55 @@ function closeFileViewer(){
 
 }
 
-function openFile(file){
+function openFile(file) {
+
+    const ext =
+        file.filename
+            .split(".")
+            .pop()
+            .toLowerCase();
+
+
+    // ------------------------------------------
+    // OFFICE FILES → EXTERNAL OFFICE VIEWER
+    // ------------------------------------------
+
+    if (
+        ext === "doc" ||
+        ext === "docx" ||
+        ext === "xls" ||
+        ext === "xlsx" ||
+        ext === "ppt" ||
+        ext === "pptx"
+    ) {
+
+        // Close any previously open internal viewer first.
+        closeFileViewer();
+
+        const fileUrl =
+            new URL(
+                file.filepath,
+                window.location.href
+            ).href;
+
+
+        const officeUrl =
+            "https://view.officeapps.live.com/op/view.aspx?src=" +
+            encodeURIComponent(fileUrl);
+
+
+        window.open(
+            officeUrl,
+            "_blank"
+        );
+
+        return;
+    }
+
+
+    // ------------------------------------------
+    // ALL OTHER FILES → EXISTING INTERNAL VIEWER
+    // ------------------------------------------
 
     const viewer = document.getElementById("viewerArea");
     const fileViewer = document.getElementById("fileViewer");
@@ -822,9 +870,7 @@ function openFile(file){
 
     viewer.style.display = "block";
     document.getElementById("contentArea").style.display = "none";
-
 }
-
 function filterTree() {
 
     visibleFolders = [];

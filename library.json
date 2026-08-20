@@ -199,6 +199,328 @@
     },
     {
         "id": 13,
+        "category": "HTML",
+        "subcategory": "",
+        "path": [
+            "HTML"
+        ],
+        "title": "Divisional Charts English",
+        "filename": "Divisional Charts English.pdf",
+        "filepath": "PDF/HTML/Divisional Charts English.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 14,
+        "category": "HTML",
+        "subcategory": "",
+        "path": [
+            "HTML"
+        ],
+        "title": "graha",
+        "filename": "graha.html",
+        "filepath": "PDF/HTML/graha.html",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 15,
+        "category": "HTML",
+        "subcategory": "",
+        "path": [
+            "HTML"
+        ],
+        "title": "MPDS_Nakshatra_Master_Summary",
+        "filename": "MPDS_Nakshatra_Master_Summary.html",
+        "filepath": "PDF/HTML/MPDS_Nakshatra_Master_Summary.html",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 16,
+        "category": "IMAGES",
+        "subcategory": "Bhav Chart New HR.jpg",
+        "path": [
+            "IMAGES",
+            "BHAVA"
+        ],
+        "title": "Bhav Chart New HR",
+        "filename": "Bhav Chart New HR.jpg",
+        "filepath": "PDF/IMAGES/BHAVA/Bhav Chart New HR.jpg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 17,
+        "category": "IMAGES",
+        "subcategory": "",
+        "path": [
+            "IMAGES"
+        ],
+        "title": "cusp ditel",
+        "filename": "cusp ditel.pdf",
+        "filepath": "PDF/IMAGES/cusp ditel.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 18,
+        "category": "IMAGES",
+        "subcategory": "DASHACHART-1",
+        "path": [
+            "IMAGES",
+            "DASHA"
+        ],
+        "title": "DASHACHART-1",
+        "filename": "DASHACHART-1",
+        "filepath": "PDF/IMAGES/DASHA/DASHACHART-1",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 19,
+        "category": "IMAGES",
+        "subcategory": "DASHACHART-1.jpeg",
+        "path": [
+            "IMAGES",
+            "DASHA"
+        ],
+        "title": "DASHACHART-1",
+        "filename": "DASHACHART-1.jpeg",
+        "filepath": "PDF/IMAGES/DASHA/DASHACHART-1.jpeg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 20,
+        "category": "IMAGES",
+        "subcategory": "grahachart2.jpeg",
+        "path": [
+            "IMAGES",
+            "GRAHA"
+        ],
+        "title": "grahachart2",
+        "filename": "grahachart2.jpeg",
+        "filepath": "PDF/IMAGES/GRAHA/grahachart2.jpeg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 21,
+        "category": "IMAGES",
+        "subcategory": "nakshatrachart.jpeg",
+        "path": [
+            "IMAGES",
+            "NAKSHATRA"
+        ],
+        "title": "nakshatrachart",
+        "filename": "nakshatrachart.jpeg",
+        "filepath": "PDF/IMAGES/NAKSHATRA/nakshatrachart.jpeg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 22,
+        "category": "IMAGES",
+        "subcategory": "rashichart5.jpeg",
+        "path": [
+            "IMAGES",
+            "RASHI"
+        ],
+        "title": "rashichart5",
+        "filename": "rashichart5.jpeg",
+        "filepath": "PDF/IMAGES/RASHI/rashichart5.jpeg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 23,
+        "category": "IMAGES",
+        "subcategory": "",
+        "path": [
+            "IMAGES"
+        ],
+        "title": "sample",
+        "filename": "sample.jpeg",
+        "filepath": "PDF/IMAGES/sample.jpeg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 24,
+        "category": "IMAGES",
+        "subcategory": "osho1.jpg",
+        "path": [
+            "IMAGES",
+            "YOGA"
+        ],
+        "title": "osho1",
+        "filename": "osho1.jpg",
+        "filepath": "PDF/IMAGES/YOGA/osho1.jpg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 25,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "Awards to LLDC & Shrujan",
+        "filename": "Awards to LLDC & Shrujan.docx",
+        "filepath": "PDF/MISC/Awards to LLDC & Shrujan.docx",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 26,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "captions",
+        "filename": "captions.txt",
+        "filepath": "PDF/MISC/captions.txt",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 27,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "Digen_video_1781186305378",
+        "filename": "Digen_video_1781186305378.mp4",
+        "filepath": "PDF/MISC/Digen_video_1781186305378.mp4",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 28,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "english sample",
+        "filename": "english sample.mpeg",
+        "filepath": "PDF/MISC/english sample.mpeg",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 29,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "Gallery inventrey",
+        "filename": "Gallery inventrey.xlsx",
+        "filepath": "PDF/MISC/Gallery inventrey.xlsx",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 30,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "morchangtukdo",
+        "filename": "morchangtukdo.mp3",
+        "filepath": "PDF/MISC/morchangtukdo.mp3",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 31,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "Nomination Form for GGS",
+        "filename": "Nomination Form for GGS.doc",
+        "filepath": "PDF/MISC/Nomination Form for GGS.doc",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 32,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "Presentation - Board Meeting 30-September-2024",
+        "filename": "Presentation - Board Meeting 30-September-2024.pptx",
+        "filepath": "PDF/MISC/Presentation - Board Meeting 30-September-2024.pptx",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 33,
+        "category": "MISC",
+        "subcategory": "",
+        "path": [
+            "MISC"
+        ],
+        "title": "रहस्यों की पुस्तक भाग 01",
+        "filename": "रहस्यों की पुस्तक भाग 01.pdf",
+        "filepath": "PDF/MISC/रहस्यों की पुस्तक भाग 01.pdf",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 34,
         "category": "Nakshatra",
         "subcategory": "Bharani.pdf",
         "path": [
@@ -214,7 +536,7 @@
         "related": []
     },
     {
-        "id": 14,
+        "id": 35,
         "category": "Nakshatra",
         "subcategory": "Constellation Guide.pdf",
         "path": [
@@ -230,7 +552,7 @@
         "related": []
     },
     {
-        "id": 15,
+        "id": 36,
         "category": "Nakshatra",
         "subcategory": "test.pdf",
         "path": [
@@ -246,7 +568,7 @@
         "related": []
     },
     {
-        "id": 16,
+        "id": 37,
         "category": "Nakshatra",
         "subcategory": "नक्षत्र 1 अश्विनी.pdf",
         "path": [
@@ -262,7 +584,7 @@
         "related": []
     },
     {
-        "id": 17,
+        "id": 38,
         "category": "Nakshatra",
         "subcategory": "नक्षत्र 3 कृतिका.pdf",
         "path": [
@@ -278,7 +600,7 @@
         "related": []
     },
     {
-        "id": 18,
+        "id": 39,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -293,7 +615,7 @@
         "related": []
     },
     {
-        "id": 19,
+        "id": 40,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -308,7 +630,7 @@
         "related": []
     },
     {
-        "id": 20,
+        "id": 41,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -323,7 +645,7 @@
         "related": []
     },
     {
-        "id": 21,
+        "id": 42,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -338,7 +660,7 @@
         "related": []
     },
     {
-        "id": 22,
+        "id": 43,
         "category": "Nakshatra",
         "subcategory": "",
         "path": [
@@ -353,7 +675,103 @@
         "related": []
     },
     {
-        "id": 23,
+        "id": 44,
+        "category": "OTHERS",
+        "subcategory": "heart attach related.txt",
+        "path": [
+            "OTHERS",
+            "CHARTS"
+        ],
+        "title": "heart attach related",
+        "filename": "heart attach related.txt",
+        "filepath": "PDF/OTHERS/CHARTS/heart attach related.txt",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 45,
+        "category": "OTHERS",
+        "subcategory": "LIST OF FOLK SINGERS.txt",
+        "path": [
+            "OTHERS",
+            "MISC"
+        ],
+        "title": "LIST OF FOLK SINGERS",
+        "filename": "LIST OF FOLK SINGERS.txt",
+        "filepath": "PDF/OTHERS/MISC/LIST OF FOLK SINGERS.txt",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 46,
+        "category": "OTHERS",
+        "subcategory": "akshita.txt",
+        "path": [
+            "OTHERS",
+            "OTHER FILES"
+        ],
+        "title": "akshita",
+        "filename": "akshita.txt",
+        "filepath": "PDF/OTHERS/OTHER FILES/akshita.txt",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 47,
+        "category": "OTHERS",
+        "subcategory": "District at a Glance.docx",
+        "path": [
+            "OTHERS",
+            "OTHER FILES"
+        ],
+        "title": "District at a Glance",
+        "filename": "District at a Glance.docx",
+        "filepath": "PDF/OTHERS/OTHER FILES/District at a Glance.docx",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 48,
+        "category": "OTHERS",
+        "subcategory": "GUJARATI MORE LATERS.doc",
+        "path": [
+            "OTHERS",
+            "OTHER FILES"
+        ],
+        "title": "GUJARATI MORE LATERS",
+        "filename": "GUJARATI MORE LATERS.doc",
+        "filepath": "PDF/OTHERS/OTHER FILES/GUJARATI MORE LATERS.doc",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 49,
+        "category": "OTHERS",
+        "subcategory": "कच्छ की संस्कृति और विरासत.docx",
+        "path": [
+            "OTHERS",
+            "OTHER FILES"
+        ],
+        "title": "कच्छ की संस्कृति और विरासत",
+        "filename": "कच्छ की संस्कृति और विरासत.docx",
+        "filepath": "PDF/OTHERS/OTHER FILES/कच्छ की संस्कृति और विरासत.docx",
+        "language": "",
+        "pages": 0,
+        "keywords": [],
+        "related": []
+    },
+    {
+        "id": 50,
         "category": "Personal Notes",
         "subcategory": "",
         "path": [
@@ -368,7 +786,7 @@
         "related": []
     },
     {
-        "id": 24,
+        "id": 51,
         "category": "Rashi",
         "subcategory": "Aries",
         "path": [
@@ -385,7 +803,7 @@
         "related": []
     },
     {
-        "id": 25,
+        "id": 52,
         "category": "Rashi",
         "subcategory": "Aries",
         "path": [
@@ -402,7 +820,7 @@
         "related": []
     },
     {
-        "id": 26,
+        "id": 53,
         "category": "Rashi",
         "subcategory": "Tauras",
         "path": [
@@ -419,7 +837,7 @@
         "related": []
     },
     {
-        "id": 27,
+        "id": 54,
         "category": "Rashi",
         "subcategory": "Tauras",
         "path": [
@@ -436,7 +854,7 @@
         "related": []
     },
     {
-        "id": 28,
+        "id": 55,
         "category": "Yogas",
         "subcategory": "Gajakesari Yoga",
         "path": [
@@ -453,7 +871,7 @@
         "related": []
     },
     {
-        "id": 29,
+        "id": 56,
         "category": "Yogas",
         "subcategory": "Kaal Sarp Yog",
         "path": [
@@ -470,7 +888,7 @@
         "related": []
     },
     {
-        "id": 30,
+        "id": 57,
         "category": "Yogas",
         "subcategory": "Three-Hundred-Important-Combinations.pdf",
         "path": [
@@ -486,7 +904,7 @@
         "related": []
     },
     {
-        "id": 31,
+        "id": 58,
         "category": "Yogas",
         "subcategory": "कुंडली में 300 ज्योतिष योग.pdf",
         "path": [
