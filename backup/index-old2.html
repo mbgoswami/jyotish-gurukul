@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>📚 Jyotish Study Library</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- ========================= -->
+        <!-- Header -->
+        <!-- ========================= -->
+
+        <!-- ========================= -->
+        <!-- Main Layout -->
+        <!-- ========================= -->
+
+        <main id="mainLayout">
+
+        <aside id="leftPanel">
+
+    <div id="categorySearch">
+
+    <input
+        id="categorySearchInput"
+        type="text"
+        placeholder="🔍 Search Category"
+        oninput="filterTree()">
+
+    </div>
+
+    <div id="categoryTitle">
+
+        Categories
+
+    </div>
+
+    <div id="categoryList">
+
+    </div>
+
+</aside>
+
+
+            <!-- RIGHT PANEL -->
+
+            <section id="rightPanel">
+
+    <div id="fileSearch">
+
+    <input
+        id="fileSearchInput"
+        type="text"
+        placeholder="🔍 Search File"
+        onkeyup="searchFiles()">
+
+</div>
+
+    <div id="contentArea">
+
+    
+        <div id="welcomeBox">
+
+            <h2>
+                🙏 Welcome
+            </h2>
+
+            <br>
+
+            <h3>
+                📚 Jyotish Study Library
+            </h3>
+
+            <br>
+
+            <p>
+
+                Select a Category from the left panel.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div id="viewerArea"
+         style="
+            display:none;
+            height:100%;
+            position:relative;
+            background:#f8fafc;
+            border-radius:8px;
+            overflow:auto;">
+
+        <div style="
+            position:sticky;
+            top:0;
+            z-index:20;
+            display:flex;
+            justify-content:flex-end;
+            padding:8px;
+            background:#f8fafc;
+            border-bottom:1px solid #ddd;">
+
+            <button
+                id="closeViewerBtn"
+                type="button"
+                style="
+                    padding:8px 14px;
+                    border:1px solid #999;
+                    border-radius:7px;
+                    background:#ffffff;
+                    color:#222;
+                    font-size:14px;
+                    font-weight:600;
+                    cursor:pointer;">
+                ✕ Close / Back
+            </button>
+
+        </div>
+
+        <iframe
+            id="fileViewer"
+            style="
+                display:block;
+                width:100%;
+                height:calc(100vh - 130px);
+                min-height:500px;
+                border:none;
+                border-radius:0 0 8px 8px;
+                background:white;">
+        </iframe>
+
+    </div>
+
+
+</section>
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
