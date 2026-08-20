@@ -365,11 +365,6 @@ async function loadLibrary(){
 
 showLoginScreen();
 
-document.getElementById("closeViewerBtn").addEventListener(
-    "click",
-    closeFileViewer
-);
-
 function buildTreeData() {
 
     const tree = {};
@@ -527,12 +522,6 @@ function createFileCard(file) {
     const card = document.createElement("div");
     card.style.background = "#ffffff";
 
-    // Mobile / Tablet: one tap on the file card opens the file.
-    card.style.cursor = "pointer";
-    card.onclick = function () {
-        openFile(file);
-    };
-
     card.style.border = "1px solid #dcdcdc";
 
     card.style.borderRadius = "10px";
@@ -672,9 +661,10 @@ if (file.related && file.related.length > 0) {
 
     button.textContent = "📂 Open File";
 
-    button.onclick = function (e) {
-        e.stopPropagation();
+    button.onclick = function () {
+
         openFile(file);
+
     };
 
     card.appendChild(button);
@@ -699,9 +689,6 @@ if (file.related && file.related.length > 0) {
 }
 
 function showFolderFiles(folder, folderName) {
-
-    // Clear the previous file viewer when changing folders.
-    closeFileViewer();
 
     currentFolder = folder;
     currentFolderName = folderName;
@@ -802,25 +789,12 @@ function showSubCategory(category, subcategory){
 
 }
 
-function closeFileViewer(){
-
-    const viewer = document.getElementById("viewerArea");
-    const fileViewer = document.getElementById("fileViewer");
-
-    fileViewer.src = "";
-    viewer.style.display = "none";
-    document.getElementById("contentArea").style.display = "block";
-
-}
-
 function openFile(file){
 
-    const viewer = document.getElementById("viewerArea");
-    const fileViewer = document.getElementById("fileViewer");
+    document.getElementById("fileViewer").src = file.filepath;
 
-    fileViewer.src = file.filepath;
+    document.getElementById("viewerArea").style.display = "block";
 
-    viewer.style.display = "block";
     document.getElementById("contentArea").style.display = "none";
 
 }
@@ -1080,7 +1054,11 @@ document.addEventListener("keydown", function(e){
 
     if(viewer.style.display === "block"){
 
-        closeFileViewer();
+        viewer.style.display = "none";
+
+        document.getElementById("fileViewer").src = "";
+
+        document.getElementById("contentArea").style.display = "block";
 
         return;
 
